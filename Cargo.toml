@@ -33,7 +33,8 @@ default-features = false
 
 [workspace.dependencies.smithay-drm-extras]
 # version = "0.1.0"
-git = "https://github.com/Smithay/smithay.git"
+git = "https://github.com/fossdd/smithay.git"
+branch = "libdisplay-info-0.3.0"
 # path = "../smithay/smithay-drm-extras"
 
 [package]
@@ -69,7 +70,7 @@ glam = "0.30.3"
 input = { version = "0.9.1", features = ["libinput_1_21"] }
 keyframe = { version = "1.1.1", default-features = false }
 libc = "0.2.172"
-libdisplay-info = "0.2.2"
+libdisplay-info = { git = "https://github.com/fossdd/libdisplay-info-rs", branch = "0.3.0" }
 log = { version = "0.4.27", features = ["max_level_trace", "release_max_level_debug"] }
 niri-config = { version = "25.5.1", path = "niri-config" }
 niri-ipc = { version = "25.5.1", path = "niri-ipc", features = ["clap"] }
